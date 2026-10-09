@@ -1,0 +1,1 @@
+SYNTHETIC: Restore exercise recovered a test dataset in 3 hours. Customer production restore not tested.

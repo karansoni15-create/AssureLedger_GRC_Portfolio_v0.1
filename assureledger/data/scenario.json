@@ -1,0 +1,320 @@
+{
+  "organization": "HarbourCloud Services \u2014 fictional Australian SaaS",
+  "assets": [
+    {
+      "id": "AS01",
+      "name": "Microsoft 365 tenant",
+      "owner": "IT lead",
+      "classification": "confidential"
+    },
+    {
+      "id": "AS02",
+      "name": "Customer support dataset",
+      "owner": "Operations lead",
+      "classification": "confidential"
+    },
+    {
+      "id": "AS03",
+      "name": "SaaS supplier ecosystem",
+      "owner": "Procurement lead",
+      "classification": "confidential"
+    }
+  ],
+  "risks": [
+    {
+      "id": "R01",
+      "asset": "AS01",
+      "scenario": "Excess device registrations enlarge unmanaged access exposure",
+      "likelihood": 4,
+      "impact": 4,
+      "target_likelihood": 2,
+      "target_impact": 4,
+      "controls": [
+        "A.8.1",
+        "A.5.23"
+      ],
+      "treatment": "Reduce quota after impact assessment; test exceptions and review endpoint coverage",
+      "owner": "IT lead",
+      "due": "2026-10-30",
+      "acceptance": "not accepted; target estimate only"
+    },
+    {
+      "id": "R02",
+      "asset": "AS01",
+      "scenario": "Privileged account misuse compromises tenant data",
+      "likelihood": 3,
+      "impact": 5,
+      "target_likelihood": 2,
+      "target_impact": 5,
+      "controls": [
+        "A.5.15",
+        "A.8.2"
+      ],
+      "treatment": "Extend review to guest and emergency accounts and retain independent evidence",
+      "owner": "IT lead",
+      "due": "2026-10-30",
+      "acceptance": "not accepted; target estimate only"
+    },
+    {
+      "id": "R03",
+      "asset": "AS02",
+      "scenario": "Unproven restoration delays recovery after data loss",
+      "likelihood": 4,
+      "impact": 5,
+      "target_likelihood": 2,
+      "target_impact": 5,
+      "controls": [
+        "A.8.13",
+        "A.5.30"
+      ],
+      "treatment": "Run representative restore exercise against agreed recovery objectives",
+      "owner": "Operations lead",
+      "due": "2026-10-30",
+      "acceptance": "not accepted; target estimate only"
+    },
+    {
+      "id": "R04",
+      "asset": "AS03",
+      "scenario": "Supplier retains customer data beyond agreed purpose",
+      "likelihood": 3,
+      "impact": 4,
+      "target_likelihood": 2,
+      "target_impact": 4,
+      "controls": [
+        "A.5.19"
+      ],
+      "treatment": "Complete due diligence and negotiate deletion evidence before renewal",
+      "owner": "Procurement lead",
+      "due": "2026-10-30",
+      "acceptance": "not accepted; target estimate only"
+    },
+    {
+      "id": "R05",
+      "asset": "AS02",
+      "scenario": "Delayed detection increases incident impact",
+      "likelihood": 3,
+      "impact": 4,
+      "target_likelihood": 2,
+      "target_impact": 4,
+      "controls": [
+        "A.8.15",
+        "A.8.16"
+      ],
+      "treatment": "Define event coverage, retention and triage ownership",
+      "owner": "IT lead",
+      "due": "2026-10-30",
+      "acceptance": "not accepted; target estimate only"
+    }
+  ],
+  "controls": [
+    {
+      "id": "A.5.9",
+      "objective": "Inventory business information and supporting assets",
+      "implementation": "partial",
+      "applicability": "included",
+      "rationale": "Customer records and cloud services require accountable owners",
+      "evidence": [],
+      "owner": "simulated IT owner"
+    },
+    {
+      "id": "A.5.15",
+      "objective": "Define and review access rules",
+      "implementation": "implemented",
+      "applicability": "included",
+      "rationale": "Privileged access is material to customer confidentiality",
+      "evidence": [
+        "E02"
+      ],
+      "owner": "simulated IT owner"
+    },
+    {
+      "id": "A.5.19",
+      "objective": "Assess security exposure from suppliers",
+      "implementation": "partial",
+      "applicability": "included",
+      "rationale": "SaaS vendors handle customer information",
+      "evidence": [
+        "E04"
+      ],
+      "owner": "simulated IT owner"
+    },
+    {
+      "id": "A.5.23",
+      "objective": "Govern cloud service use",
+      "implementation": "partial",
+      "applicability": "included",
+      "rationale": "M365 and Azure support core operations",
+      "evidence": [
+        "E01"
+      ],
+      "owner": "simulated IT owner"
+    },
+    {
+      "id": "A.5.30",
+      "objective": "Prepare ICT recovery arrangements",
+      "implementation": "planned",
+      "applicability": "included",
+      "rationale": "Service interruption threatens contracted availability",
+      "evidence": [
+        "E03"
+      ],
+      "owner": "simulated IT owner"
+    },
+    {
+      "id": "A.6.3",
+      "objective": "Build staff security awareness",
+      "implementation": "planned",
+      "applicability": "included",
+      "rationale": "Staff process customer information",
+      "evidence": [],
+      "owner": "simulated IT owner"
+    },
+    {
+      "id": "A.7.2",
+      "objective": "Protect physical entry to facilities",
+      "implementation": "not_applicable",
+      "applicability": "excluded",
+      "rationale": "Pilot boundary excludes company-operated facilities; reassess shared-office and provider dependencies",
+      "evidence": [],
+      "owner": "simulated IT owner"
+    },
+    {
+      "id": "A.8.1",
+      "objective": "Manage endpoint security",
+      "implementation": "partial",
+      "applicability": "included",
+      "rationale": "Managed laptops access customer information",
+      "evidence": [
+        "E01"
+      ],
+      "owner": "simulated IT owner"
+    },
+    {
+      "id": "A.8.2",
+      "objective": "Control privileged access",
+      "implementation": "implemented",
+      "applicability": "included",
+      "rationale": "Admin misuse has high impact",
+      "evidence": [
+        "E02"
+      ],
+      "owner": "simulated IT owner"
+    },
+    {
+      "id": "A.8.13",
+      "objective": "Maintain recoverable backups",
+      "implementation": "implemented",
+      "applicability": "included",
+      "rationale": "Deletion and outages require tested recovery",
+      "evidence": [
+        "E03"
+      ],
+      "owner": "simulated IT owner"
+    },
+    {
+      "id": "A.8.15",
+      "objective": "Record useful security events",
+      "implementation": "planned",
+      "applicability": "included",
+      "rationale": "Incident investigation needs reliable logs",
+      "evidence": [],
+      "owner": "simulated IT owner"
+    },
+    {
+      "id": "A.8.16",
+      "objective": "Review activity for suspicious behavior",
+      "implementation": "planned",
+      "applicability": "included",
+      "rationale": "Detection supports incident handling",
+      "evidence": [],
+      "owner": "simulated IT owner"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E01",
+      "path": "evidence/device-policy.json",
+      "sha256": "31c3c40121761d22976f6cf5e8dcf1093a0544149bc16c9b57da7613b13546ba",
+      "collected": "2026-10-01",
+      "expires": "2026-10-31",
+      "review": "pending",
+      "reviewer": "",
+      "quality": "configuration snapshot",
+      "scope": "Pilot only; synthetic",
+      "source": "AssureLedger fixture"
+    },
+    {
+      "id": "E02",
+      "path": "evidence/access-review.txt",
+      "sha256": "78663ad052af080c93fa1de3c69aa94cc5f2e44d34a8f481fdf8bad2b6b7e6c9",
+      "collected": "2026-10-01",
+      "expires": "2026-12-31",
+      "review": "accepted",
+      "reviewer": "simulated assurance lead",
+      "quality": "documented exercise",
+      "scope": "Pilot only; synthetic",
+      "source": "AssureLedger fixture"
+    },
+    {
+      "id": "E03",
+      "path": "evidence/restore-test.txt",
+      "sha256": "466ab2c6f66e2e6cbe595f6727e9ede0d524468d51d76213a1af42ece1a20efa",
+      "collected": "2026-06-01",
+      "expires": "2026-09-01",
+      "review": "accepted",
+      "reviewer": "simulated assurance lead",
+      "quality": "documented exercise",
+      "scope": "Pilot only; synthetic",
+      "source": "AssureLedger fixture"
+    },
+    {
+      "id": "E04",
+      "path": "evidence/vendor-review.txt",
+      "sha256": "a9f694db945261ea97cb9a85f1715b7f0d8a57dcca2caecccf0cb828af8bdb93",
+      "collected": "2026-10-01",
+      "expires": "2026-11-01",
+      "review": "pending",
+      "reviewer": "",
+      "quality": "documented exercise",
+      "scope": "Pilot only; synthetic",
+      "source": "AssureLedger fixture"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "risk": "R01",
+      "control": "A.8.1",
+      "issue": "Device quota exceeds project threshold; endpoint coverage unverified",
+      "owner": "IT lead",
+      "due": "2026-10-16",
+      "status": "open",
+      "closure_evidence": [],
+      "verified_by": ""
+    },
+    {
+      "id": "F02",
+      "risk": "R03",
+      "control": "A.8.13",
+      "issue": "Restore evidence expired; closure lacks fresh independent verification",
+      "owner": "Operations lead",
+      "due": "2026-10-05",
+      "status": "closed",
+      "closure_evidence": [
+        "E03"
+      ],
+      "verified_by": "simulated assurance lead"
+    },
+    {
+      "id": "F03",
+      "risk": "R04",
+      "control": "A.5.19",
+      "issue": "Supplier deletion and subprocessor assurance incomplete",
+      "owner": "Procurement lead",
+      "due": "2026-10-23",
+      "status": "in_progress",
+      "closure_evidence": [],
+      "verified_by": ""
+    }
+  ]
+}

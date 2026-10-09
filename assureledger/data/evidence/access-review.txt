@@ -1,0 +1,1 @@
+SYNTHETIC: Pilot access review; 12 of 12 privileged accounts reviewed. Reviewer: simulated assurance lead. Sampling excludes guest accounts.

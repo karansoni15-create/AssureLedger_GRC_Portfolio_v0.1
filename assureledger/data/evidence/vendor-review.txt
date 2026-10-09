@@ -1,0 +1,1 @@
+SYNTHETIC: Vendor contract lacks confirmed deletion evidence and subprocessor review.

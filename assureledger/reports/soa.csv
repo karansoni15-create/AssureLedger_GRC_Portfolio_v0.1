@@ -1,0 +1,13 @@
+id,objective,applicability,rationale,implementation,owner,assurance
+A.5.9,Inventory business information and supporting assets,included,Customer records and cloud services require accountable owners,partial,simulated IT owner,implementation_gap
+A.5.15,Define and review access rules,included,Privileged access is material to customer confidentiality,implemented,simulated IT owner,supported_for_review
+A.5.19,Assess security exposure from suppliers,included,SaaS vendors handle customer information,partial,simulated IT owner,implementation_gap
+A.5.23,Govern cloud service use,included,M365 and Azure support core operations,partial,simulated IT owner,implementation_gap
+A.5.30,Prepare ICT recovery arrangements,included,Service interruption threatens contracted availability,planned,simulated IT owner,implementation_gap
+A.6.3,Build staff security awareness,included,Staff process customer information,planned,simulated IT owner,implementation_gap
+A.7.2,Protect physical entry to facilities,excluded,Pilot boundary excludes company-operated facilities; reassess shared-office and provider dependencies,not_applicable,simulated IT owner,excluded
+A.8.1,Manage endpoint security,included,Managed laptops access customer information,partial,simulated IT owner,implementation_gap
+A.8.2,Control privileged access,included,Admin misuse has high impact,implemented,simulated IT owner,supported_for_review
+A.8.13,Maintain recoverable backups,included,Deletion and outages require tested recovery,implemented,simulated IT owner,evidence_gap
+A.8.15,Record useful security events,included,Incident investigation needs reliable logs,planned,simulated IT owner,implementation_gap
+A.8.16,Review activity for suspicious behavior,included,Detection supports incident handling,planned,simulated IT owner,implementation_gap
