@@ -15,7 +15,9 @@ def main():
     args = parser.parse_args()
     data_path = Path(args.data)
     result = assess(load(data_path), data_path.parent, args.as_of)
-    result["technical_check"] = {"device_quota": device_quota(load(data_path.parent / "evidence/device-policy.json")), "scope": "One synthetic configuration snapshot; manual mapping required"}
+    device_policy = data_path.parent / "evidence/device-policy.json"
+    quota = device_quota(load(device_policy)) if device_policy.is_file() else "unknown"
+    result["technical_check"] = {"device_quota": quota, "scope": "One synthetic configuration snapshot; manual mapping required"}
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     (out / "assessment.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")

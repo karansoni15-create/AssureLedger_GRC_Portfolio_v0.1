@@ -5,12 +5,14 @@
 An ISO/IEC 27001:2022-oriented GRC portfolio by Karan Soni, developed with AI assistance. Version 0.1 is a tested, offline Python workbench using a fictional Australian SaaS company. It extends the *idea* behind Karan's AutoAudit contributions into governance workflows. No Hardhat code or private organizational data is reused.
 
 ## Start in two minutes
-Requires Python 3.11+; no third-party dependencies, credentials, cloud subscription or paid platform.
+Requires Python 3.11+ (CI also verifies Python 3.14); no runtime dependencies, credentials, cloud subscription or paid platform.
 
 ```sh
 python -m unittest discover -s tests -v
 python -m assureledger --as-of 2026-10-10
 ```
+
+For an editable local install, run `python -m pip install --editable .`. The optional device-policy snapshot is reported as `unknown` when it is absent; the evidence records referenced by the scenario remain required and are validated before assessment.
 
 Open `reports/management-review.html` locally. On Windows, run `start reports\management-review.html`. Review the machine-readable `reports/assessment.json` and spreadsheet-friendly `reports/soa.csv`. Run commands from this repository root. Omit `--as-of` to evaluate freshness on the current local date.
 

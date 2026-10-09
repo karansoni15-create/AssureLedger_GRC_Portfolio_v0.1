@@ -39,6 +39,19 @@ class AssuranceTests(unittest.TestCase):
         self.data['risks'].append(deepcopy(self.data['risks'][0]))
         with self.assertRaises(ValueError): validate(self.data)
 
+    def test_malformed_evidence_metadata_rejected(self):
+        self.data['evidence'][0]['sha256'] = 'not-a-digest'
+        with self.assertRaises(ValueError): validate(self.data)
+
+    def test_missing_required_field_rejected(self):
+        del self.data['risks'][0]['owner']
+        with self.assertRaises(ValueError): validate(self.data)
+
+    def test_evidence_expiry_before_collection_rejected(self):
+        self.data['evidence'][0]['expires'] = '2026-01-01'
+        self.data['evidence'][0]['collected'] = '2026-02-01'
+        with self.assertRaises(ValueError): validate(self.data)
+
     def test_exclusion_requires_reason(self):
         self.data['controls'][6]['rationale'] = ''
         with self.assertRaises(ValueError): validate(self.data)
@@ -103,6 +116,16 @@ class AssuranceTests(unittest.TestCase):
             report = load(tmp/'out/assessment.json')
             self.assertEqual(report['as_of'],'2026-10-10')
             self.assertEqual(report['technical_check']['device_quota'],'fail')
+
+    def test_cli_missing_optional_device_snapshot(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            source = tmp/'scenario.json'
+            source.write_text(json.dumps(self.data))
+            (tmp/'evidence').mkdir()
+            result = subprocess.run([sys.executable,'-m','assureledger','--data',str(source),'--as-of','2026-10-10','--out',str(tmp/'out')],cwd=ROOT,capture_output=True,text=True)
+            self.assertEqual(result.returncode,0,result.stderr)
+            self.assertEqual(load(tmp/'out/assessment.json')['technical_check']['device_quota'],'unknown')
 
 
 if __name__ == '__main__':

@@ -2,4 +2,22 @@
 name = "assureledger"
 version = "0.1.0"
 description = "Synthetic ISO 27001 risk and evidence portfolio"
+readme = "README.md"
 requires-python = ">=3.11"
+authors = [{name = "Karan Soni"}]
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3 :: Only",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: 3.13",
+	"Programming Language :: Python :: 3.14",
+]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["assureledger*"]
