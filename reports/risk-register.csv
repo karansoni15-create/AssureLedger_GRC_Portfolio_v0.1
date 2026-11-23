@@ -1,0 +1,7 @@
+id,asset,scenario,owner,likelihood,impact,inherent,band,treatment_option,treatment,controls,treatment_status,due,treatment_overdue,target,residual,acceptance_status
+R01,AS01,Excess device registrations enlarge unmanaged access exposure,IT lead,4,4,16,high,modify,Reduce quota after impact assessment; test exceptions and review endpoint coverage,A.8.1; A.5.23,in_progress,2026-10-30,False,8,,not_requested
+R02,AS01,Privileged account misuse compromises tenant data,IT lead,3,5,15,high,modify,Extend review to guest and emergency accounts and retain independent evidence,A.5.15; A.8.2,in_progress,2026-10-30,False,10,,not_requested
+R03,AS02,Unproven restoration delays recovery after data loss,Operations lead,4,5,20,critical,modify,Run representative restore exercise against agreed recovery objectives,A.8.13; A.5.30,not_started,2026-10-30,False,10,,not_requested
+R04,AS03,Supplier retains customer data beyond agreed purpose,Procurement lead,3,4,12,high,modify,Complete due diligence and negotiate deletion evidence before renewal,A.5.19,in_progress,2026-10-30,False,8,,not_requested
+R05,AS02,Delayed detection increases incident impact,IT lead,3,4,12,high,modify,"Define event coverage, retention and triage ownership",A.8.15; A.8.16,not_started,2026-10-30,False,8,,not_requested
+R06,AS01,Key-person dependency on one tenant administrator slows recovery from misconfiguration,IT lead,3,3,9,moderate,retain,Retain for two quarters while runbooks are written; revisit when a second administrator is hired,A.5.37,complete,2026-10-01,False,9,9,valid

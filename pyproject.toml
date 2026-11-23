@@ -1,0 +1,29 @@
+[project]
+name = "assureledger"
+version = "0.2.0"
+description = "ISO/IEC 27001:2022-oriented risk, SoA and evidence assurance workbench (synthetic portfolio)"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Karan Soni"}]
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3 :: Only",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: 3.13",
+	"Programming Language :: Python :: 3.14",
+]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["assureledger*"]
+
+[tool.setuptools.package-data]
+assureledger = ["annex_a_2022.json"]
+
+[project.scripts]
+assureledger = "assureledger.__main__:main"
