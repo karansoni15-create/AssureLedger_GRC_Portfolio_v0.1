@@ -1,0 +1,3 @@
+# Keep generated reports byte-identical across Windows, macOS and Linux.
+* text=auto eol=lf
+data/evidence/** -text

@@ -1,0 +1,471 @@
+{
+  "_note": "ISO/IEC 27001:2022 Annex A reference identifiers with short paraphrased topic labels written for this project. Not the licensed control text; validate against the standard.",
+  "edition": "ISO/IEC 27001:2022",
+  "controls": [
+    {
+      "id": "A.5.1",
+      "theme": "organisational",
+      "topic": "Information security policies"
+    },
+    {
+      "id": "A.5.2",
+      "theme": "organisational",
+      "topic": "Security roles and responsibilities"
+    },
+    {
+      "id": "A.5.3",
+      "theme": "organisational",
+      "topic": "Segregation of duties"
+    },
+    {
+      "id": "A.5.4",
+      "theme": "organisational",
+      "topic": "Management responsibilities"
+    },
+    {
+      "id": "A.5.5",
+      "theme": "organisational",
+      "topic": "Contact with authorities"
+    },
+    {
+      "id": "A.5.6",
+      "theme": "organisational",
+      "topic": "Contact with special interest groups"
+    },
+    {
+      "id": "A.5.7",
+      "theme": "organisational",
+      "topic": "Threat intelligence"
+    },
+    {
+      "id": "A.5.8",
+      "theme": "organisational",
+      "topic": "Security in project management"
+    },
+    {
+      "id": "A.5.9",
+      "theme": "organisational",
+      "topic": "Inventory of information and associated assets"
+    },
+    {
+      "id": "A.5.10",
+      "theme": "organisational",
+      "topic": "Acceptable use of assets"
+    },
+    {
+      "id": "A.5.11",
+      "theme": "organisational",
+      "topic": "Return of assets"
+    },
+    {
+      "id": "A.5.12",
+      "theme": "organisational",
+      "topic": "Classification of information"
+    },
+    {
+      "id": "A.5.13",
+      "theme": "organisational",
+      "topic": "Labelling of information"
+    },
+    {
+      "id": "A.5.14",
+      "theme": "organisational",
+      "topic": "Information transfer"
+    },
+    {
+      "id": "A.5.15",
+      "theme": "organisational",
+      "topic": "Access control rules"
+    },
+    {
+      "id": "A.5.16",
+      "theme": "organisational",
+      "topic": "Identity management"
+    },
+    {
+      "id": "A.5.17",
+      "theme": "organisational",
+      "topic": "Authentication information"
+    },
+    {
+      "id": "A.5.18",
+      "theme": "organisational",
+      "topic": "Access rights"
+    },
+    {
+      "id": "A.5.19",
+      "theme": "organisational",
+      "topic": "Supplier relationship security"
+    },
+    {
+      "id": "A.5.20",
+      "theme": "organisational",
+      "topic": "Security in supplier agreements"
+    },
+    {
+      "id": "A.5.21",
+      "theme": "organisational",
+      "topic": "ICT supply-chain security"
+    },
+    {
+      "id": "A.5.22",
+      "theme": "organisational",
+      "topic": "Monitoring and change of supplier services"
+    },
+    {
+      "id": "A.5.23",
+      "theme": "organisational",
+      "topic": "Use of cloud services"
+    },
+    {
+      "id": "A.5.24",
+      "theme": "organisational",
+      "topic": "Incident management planning and preparation"
+    },
+    {
+      "id": "A.5.25",
+      "theme": "organisational",
+      "topic": "Assessment of security events"
+    },
+    {
+      "id": "A.5.26",
+      "theme": "organisational",
+      "topic": "Incident response"
+    },
+    {
+      "id": "A.5.27",
+      "theme": "organisational",
+      "topic": "Learning from incidents"
+    },
+    {
+      "id": "A.5.28",
+      "theme": "organisational",
+      "topic": "Collection of evidence"
+    },
+    {
+      "id": "A.5.29",
+      "theme": "organisational",
+      "topic": "Security during disruption"
+    },
+    {
+      "id": "A.5.30",
+      "theme": "organisational",
+      "topic": "ICT readiness for business continuity"
+    },
+    {
+      "id": "A.5.31",
+      "theme": "organisational",
+      "topic": "Legal, statutory, regulatory and contractual requirements"
+    },
+    {
+      "id": "A.5.32",
+      "theme": "organisational",
+      "topic": "Intellectual property rights"
+    },
+    {
+      "id": "A.5.33",
+      "theme": "organisational",
+      "topic": "Protection of records"
+    },
+    {
+      "id": "A.5.34",
+      "theme": "organisational",
+      "topic": "Privacy and protection of personal information"
+    },
+    {
+      "id": "A.5.35",
+      "theme": "organisational",
+      "topic": "Independent review of information security"
+    },
+    {
+      "id": "A.5.36",
+      "theme": "organisational",
+      "topic": "Compliance with security policies and standards"
+    },
+    {
+      "id": "A.5.37",
+      "theme": "organisational",
+      "topic": "Documented operating procedures"
+    },
+    {
+      "id": "A.6.1",
+      "theme": "people",
+      "topic": "Screening"
+    },
+    {
+      "id": "A.6.2",
+      "theme": "people",
+      "topic": "Terms and conditions of employment"
+    },
+    {
+      "id": "A.6.3",
+      "theme": "people",
+      "topic": "Security awareness, education and training"
+    },
+    {
+      "id": "A.6.4",
+      "theme": "people",
+      "topic": "Disciplinary process"
+    },
+    {
+      "id": "A.6.5",
+      "theme": "people",
+      "topic": "Responsibilities after termination or change"
+    },
+    {
+      "id": "A.6.6",
+      "theme": "people",
+      "topic": "Confidentiality agreements"
+    },
+    {
+      "id": "A.6.7",
+      "theme": "people",
+      "topic": "Remote working"
+    },
+    {
+      "id": "A.6.8",
+      "theme": "people",
+      "topic": "Security event reporting"
+    },
+    {
+      "id": "A.7.1",
+      "theme": "physical",
+      "topic": "Physical security perimeters"
+    },
+    {
+      "id": "A.7.2",
+      "theme": "physical",
+      "topic": "Physical entry"
+    },
+    {
+      "id": "A.7.3",
+      "theme": "physical",
+      "topic": "Securing offices, rooms and facilities"
+    },
+    {
+      "id": "A.7.4",
+      "theme": "physical",
+      "topic": "Physical security monitoring"
+    },
+    {
+      "id": "A.7.5",
+      "theme": "physical",
+      "topic": "Physical and environmental threats"
+    },
+    {
+      "id": "A.7.6",
+      "theme": "physical",
+      "topic": "Working in secure areas"
+    },
+    {
+      "id": "A.7.7",
+      "theme": "physical",
+      "topic": "Clear desk and clear screen"
+    },
+    {
+      "id": "A.7.8",
+      "theme": "physical",
+      "topic": "Equipment siting and protection"
+    },
+    {
+      "id": "A.7.9",
+      "theme": "physical",
+      "topic": "Security of assets off-premises"
+    },
+    {
+      "id": "A.7.10",
+      "theme": "physical",
+      "topic": "Storage media"
+    },
+    {
+      "id": "A.7.11",
+      "theme": "physical",
+      "topic": "Supporting utilities"
+    },
+    {
+      "id": "A.7.12",
+      "theme": "physical",
+      "topic": "Cabling security"
+    },
+    {
+      "id": "A.7.13",
+      "theme": "physical",
+      "topic": "Equipment maintenance"
+    },
+    {
+      "id": "A.7.14",
+      "theme": "physical",
+      "topic": "Secure disposal or re-use of equipment"
+    },
+    {
+      "id": "A.8.1",
+      "theme": "technological",
+      "topic": "User endpoint devices"
+    },
+    {
+      "id": "A.8.2",
+      "theme": "technological",
+      "topic": "Privileged access rights"
+    },
+    {
+      "id": "A.8.3",
+      "theme": "technological",
+      "topic": "Information access restriction"
+    },
+    {
+      "id": "A.8.4",
+      "theme": "technological",
+      "topic": "Access to source code"
+    },
+    {
+      "id": "A.8.5",
+      "theme": "technological",
+      "topic": "Secure authentication"
+    },
+    {
+      "id": "A.8.6",
+      "theme": "technological",
+      "topic": "Capacity management"
+    },
+    {
+      "id": "A.8.7",
+      "theme": "technological",
+      "topic": "Protection against malware"
+    },
+    {
+      "id": "A.8.8",
+      "theme": "technological",
+      "topic": "Technical vulnerability management"
+    },
+    {
+      "id": "A.8.9",
+      "theme": "technological",
+      "topic": "Configuration management"
+    },
+    {
+      "id": "A.8.10",
+      "theme": "technological",
+      "topic": "Information deletion"
+    },
+    {
+      "id": "A.8.11",
+      "theme": "technological",
+      "topic": "Data masking"
+    },
+    {
+      "id": "A.8.12",
+      "theme": "technological",
+      "topic": "Data leakage prevention"
+    },
+    {
+      "id": "A.8.13",
+      "theme": "technological",
+      "topic": "Information backup"
+    },
+    {
+      "id": "A.8.14",
+      "theme": "technological",
+      "topic": "Redundancy of processing facilities"
+    },
+    {
+      "id": "A.8.15",
+      "theme": "technological",
+      "topic": "Logging"
+    },
+    {
+      "id": "A.8.16",
+      "theme": "technological",
+      "topic": "Monitoring activities"
+    },
+    {
+      "id": "A.8.17",
+      "theme": "technological",
+      "topic": "Clock synchronisation"
+    },
+    {
+      "id": "A.8.18",
+      "theme": "technological",
+      "topic": "Privileged utility programs"
+    },
+    {
+      "id": "A.8.19",
+      "theme": "technological",
+      "topic": "Software installation on operational systems"
+    },
+    {
+      "id": "A.8.20",
+      "theme": "technological",
+      "topic": "Network security"
+    },
+    {
+      "id": "A.8.21",
+      "theme": "technological",
+      "topic": "Security of network services"
+    },
+    {
+      "id": "A.8.22",
+      "theme": "technological",
+      "topic": "Network segregation"
+    },
+    {
+      "id": "A.8.23",
+      "theme": "technological",
+      "topic": "Web filtering"
+    },
+    {
+      "id": "A.8.24",
+      "theme": "technological",
+      "topic": "Use of cryptography"
+    },
+    {
+      "id": "A.8.25",
+      "theme": "technological",
+      "topic": "Secure development life cycle"
+    },
+    {
+      "id": "A.8.26",
+      "theme": "technological",
+      "topic": "Application security requirements"
+    },
+    {
+      "id": "A.8.27",
+      "theme": "technological",
+      "topic": "Secure architecture and engineering principles"
+    },
+    {
+      "id": "A.8.28",
+      "theme": "technological",
+      "topic": "Secure coding"
+    },
+    {
+      "id": "A.8.29",
+      "theme": "technological",
+      "topic": "Security testing in development and acceptance"
+    },
+    {
+      "id": "A.8.30",
+      "theme": "technological",
+      "topic": "Outsourced development"
+    },
+    {
+      "id": "A.8.31",
+      "theme": "technological",
+      "topic": "Separation of development, test and production"
+    },
+    {
+      "id": "A.8.32",
+      "theme": "technological",
+      "topic": "Change management"
+    },
+    {
+      "id": "A.8.33",
+      "theme": "technological",
+      "topic": "Test information"
+    },
+    {
+      "id": "A.8.34",
+      "theme": "technological",
+      "topic": "Protection of systems during audit testing"
+    }
+  ]
+}

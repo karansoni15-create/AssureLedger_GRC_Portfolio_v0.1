@@ -1,0 +1,94 @@
+id,theme,topic,applicability,rationale,implementation,assurance,evidence,owner
+A.5.1,organisational,Information security policies,undecided,,,undecided,,
+A.5.2,organisational,Security roles and responsibilities,undecided,,,undecided,,
+A.5.3,organisational,Segregation of duties,undecided,,,undecided,,
+A.5.4,organisational,Management responsibilities,undecided,,,undecided,,
+A.5.5,organisational,Contact with authorities,included,Regulator and ASD reporting deadlines require known contacts and an authorised reporter,planned,implementation_gap,,simulated IT owner
+A.5.6,organisational,Contact with special interest groups,undecided,,,undecided,,
+A.5.7,organisational,Threat intelligence,undecided,,,undecided,,
+A.5.8,organisational,Security in project management,undecided,,,undecided,,
+A.5.9,organisational,Inventory of information and associated assets,included,Customer records and cloud services require accountable owners,partial,implementation_gap,,simulated IT owner
+A.5.10,organisational,Acceptable use of assets,undecided,,,undecided,,
+A.5.11,organisational,Return of assets,undecided,,,undecided,,
+A.5.12,organisational,Classification of information,undecided,,,undecided,,
+A.5.13,organisational,Labelling of information,undecided,,,undecided,,
+A.5.14,organisational,Information transfer,undecided,,,undecided,,
+A.5.15,organisational,Access control rules,included,Privileged access is material to customer confidentiality,implemented,supported_for_review,E02,simulated IT owner
+A.5.16,organisational,Identity management,undecided,,,undecided,,
+A.5.17,organisational,Authentication information,undecided,,,undecided,,
+A.5.18,organisational,Access rights,undecided,,,undecided,,
+A.5.19,organisational,Supplier relationship security,included,SaaS vendors handle customer information,partial,implementation_gap,E04,simulated IT owner
+A.5.20,organisational,Security in supplier agreements,undecided,,,undecided,,
+A.5.21,organisational,ICT supply-chain security,undecided,,,undecided,,
+A.5.22,organisational,Monitoring and change of supplier services,undecided,,,undecided,,
+A.5.23,organisational,Use of cloud services,included,M365 and Azure support core operations,partial,implementation_gap,E01,simulated IT owner
+A.5.24,organisational,Incident management planning and preparation,included,Contractual and statutory notification deadlines depend on a rehearsed response plan,partial,implementation_gap,,simulated IT owner
+A.5.25,organisational,Assessment of security events,undecided,,,undecided,,
+A.5.26,organisational,Incident response,included,"Customer data incidents must be contained, assessed and notified within defined timeframes",planned,implementation_gap,,simulated IT owner
+A.5.27,organisational,Learning from incidents,undecided,,,undecided,,
+A.5.28,organisational,Collection of evidence,undecided,,,undecided,,
+A.5.29,organisational,Security during disruption,undecided,,,undecided,,
+A.5.30,organisational,ICT readiness for business continuity,included,Service interruption threatens contracted availability,planned,implementation_gap,E03,simulated IT owner
+A.5.31,organisational,"Legal, statutory, regulatory and contractual requirements",included,Obligations register OB01–OB04 is the working record; applicability still needs legal confirmation,partial,implementation_gap,,simulated IT owner
+A.5.32,organisational,Intellectual property rights,undecided,,,undecided,,
+A.5.33,organisational,Protection of records,undecided,,,undecided,,
+A.5.34,organisational,Privacy and protection of personal information,included,Support records contain customer personal information,partial,implementation_gap,,simulated IT owner
+A.5.35,organisational,Independent review of information security,undecided,,,undecided,,
+A.5.36,organisational,Compliance with security policies and standards,undecided,,,undecided,,
+A.5.37,organisational,Documented operating procedures,included,Tenant administration depends on one person; runbooks reduce key-person exposure,planned,implementation_gap,,simulated IT owner
+A.6.1,people,Screening,undecided,,,undecided,,
+A.6.2,people,Terms and conditions of employment,undecided,,,undecided,,
+A.6.3,people,"Security awareness, education and training",included,Staff process customer information,planned,implementation_gap,,simulated IT owner
+A.6.4,people,Disciplinary process,undecided,,,undecided,,
+A.6.5,people,Responsibilities after termination or change,undecided,,,undecided,,
+A.6.6,people,Confidentiality agreements,undecided,,,undecided,,
+A.6.7,people,Remote working,undecided,,,undecided,,
+A.6.8,people,Security event reporting,undecided,,,undecided,,
+A.7.1,physical,Physical security perimeters,undecided,,,undecided,,
+A.7.2,physical,Physical entry,excluded,Pilot boundary excludes company-operated facilities; reassess shared-office and provider dependencies,not_applicable,excluded,,simulated IT owner
+A.7.3,physical,"Securing offices, rooms and facilities",undecided,,,undecided,,
+A.7.4,physical,Physical security monitoring,undecided,,,undecided,,
+A.7.5,physical,Physical and environmental threats,undecided,,,undecided,,
+A.7.6,physical,Working in secure areas,undecided,,,undecided,,
+A.7.7,physical,Clear desk and clear screen,undecided,,,undecided,,
+A.7.8,physical,Equipment siting and protection,undecided,,,undecided,,
+A.7.9,physical,Security of assets off-premises,undecided,,,undecided,,
+A.7.10,physical,Storage media,undecided,,,undecided,,
+A.7.11,physical,Supporting utilities,undecided,,,undecided,,
+A.7.12,physical,Cabling security,undecided,,,undecided,,
+A.7.13,physical,Equipment maintenance,undecided,,,undecided,,
+A.7.14,physical,Secure disposal or re-use of equipment,undecided,,,undecided,,
+A.8.1,technological,User endpoint devices,included,Managed laptops access customer information,partial,implementation_gap,E01,simulated IT owner
+A.8.2,technological,Privileged access rights,included,Admin misuse has high impact,implemented,supported_for_review,E02,simulated IT owner
+A.8.3,technological,Information access restriction,undecided,,,undecided,,
+A.8.4,technological,Access to source code,undecided,,,undecided,,
+A.8.5,technological,Secure authentication,included,Phishing-resistant MFA for administrators reduces privileged misuse exposure,partial,implementation_gap,,simulated IT owner
+A.8.6,technological,Capacity management,undecided,,,undecided,,
+A.8.7,technological,Protection against malware,undecided,,,undecided,,
+A.8.8,technological,Technical vulnerability management,undecided,,,undecided,,
+A.8.9,technological,Configuration management,undecided,,,undecided,,
+A.8.10,technological,Information deletion,undecided,,,undecided,,
+A.8.11,technological,Data masking,undecided,,,undecided,,
+A.8.12,technological,Data leakage prevention,undecided,,,undecided,,
+A.8.13,technological,Information backup,included,Deletion and outages require tested recovery,implemented,evidence_gap,E03,simulated IT owner
+A.8.14,technological,Redundancy of processing facilities,undecided,,,undecided,,
+A.8.15,technological,Logging,included,Incident investigation needs reliable logs,planned,implementation_gap,,simulated IT owner
+A.8.16,technological,Monitoring activities,included,Detection supports incident handling,planned,implementation_gap,,simulated IT owner
+A.8.17,technological,Clock synchronisation,undecided,,,undecided,,
+A.8.18,technological,Privileged utility programs,undecided,,,undecided,,
+A.8.19,technological,Software installation on operational systems,undecided,,,undecided,,
+A.8.20,technological,Network security,undecided,,,undecided,,
+A.8.21,technological,Security of network services,undecided,,,undecided,,
+A.8.22,technological,Network segregation,undecided,,,undecided,,
+A.8.23,technological,Web filtering,undecided,,,undecided,,
+A.8.24,technological,Use of cryptography,undecided,,,undecided,,
+A.8.25,technological,Secure development life cycle,undecided,,,undecided,,
+A.8.26,technological,Application security requirements,undecided,,,undecided,,
+A.8.27,technological,Secure architecture and engineering principles,undecided,,,undecided,,
+A.8.28,technological,Secure coding,undecided,,,undecided,,
+A.8.29,technological,Security testing in development and acceptance,undecided,,,undecided,,
+A.8.30,technological,Outsourced development,undecided,,,undecided,,
+A.8.31,technological,"Separation of development, test and production",undecided,,,undecided,,
+A.8.32,technological,Change management,undecided,,,undecided,,
+A.8.33,technological,Test information,undecided,,,undecided,,
+A.8.34,technological,Protection of systems during audit testing,undecided,,,undecided,,
